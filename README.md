@@ -1,4 +1,4 @@
-# LQDTU Web Client
+# Tạp chí lịch sử quân sự Web Client
 ## Mô tả
 - Bản quyền thuộc về Le Quy Don University
 ## Công nghệ
