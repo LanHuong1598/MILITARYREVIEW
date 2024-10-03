@@ -1,0 +1,27 @@
+.news_title > h4 {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.42;
+    margin: 0 0 15px;
+    word-wrap: break-word;
+}
+.news_body p{
+    font-family: 'Montserrat';
+}
+.news_footer >h3 {
+    font-weight: 500;
+    color: #e81d1d;
+}
+.news_footer >h3 {
+    font-weight: 500;
+    color: #e81d1d;
+}
+.news_footer >ul>li>a {
+    color: #000;
+    font-weight: 400;
+    font-size: 17px;
+}
+.news_footer >ul>li>a:hover {
+    text-decoration: underline;
+}

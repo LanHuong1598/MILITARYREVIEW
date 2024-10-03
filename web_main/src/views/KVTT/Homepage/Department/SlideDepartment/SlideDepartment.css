@@ -1,0 +1,142 @@
+/* Style cho slide */
+
+.SlideDepartment {
+    height: 500px;
+    display: block;
+    margin-top: 48px;
+    
+}
+
+/* Style cho slide Item */
+
+.SlideDepartment-item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.SlideDepartment-item img {
+    width: 100%;
+    height: 360px;
+}
+
+.SlideDepartmentContainer {
+    position: relative;
+    margin-bottom: 27px;
+}
+
+
+
+.overlaySlideDepartment {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transition: 1s ease;
+    background-color: #161616;
+}
+
+.textSlideDepartment {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28.8px;
+    color: #ffffff;
+    
+    position: absolute;
+    max-height: 80%;
+    width: 80%;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.SlideDepartment-item a {
+    font-weight: 700;
+    color: #e81d1d;
+    font-size: 21px;
+    /* white-space: pre-wrap;  */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+/* style button slide */
+
+.slick-next:before, .slick-prev:before {
+    font-size: 20px;
+    color: #d88a8a;
+    opacity: 0.8 !important;
+}
+
+/* .slick-prev:before{
+    margin-left: -60px;
+} */
+
+.slick-prev, .slick-next {
+    top: 36%
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1280px) {
+    .slick-next:before, .slick-prev:before {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .slick-next:before, .slick-prev:before {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .SlideDepartment {
+        height: 315px;
+        margin-left: 29px !important;
+        margin-right: 29px !important;
+    }
+    .SlideDepartment-item img {
+        height: 202px;
+    }
+    .slick-next:before {
+        margin-left: 7px;
+    }
+    .slick-prev:before {
+        margin-left: -10px;
+    }
+    .SlideDepartment-item a {
+        font-size: 18px
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .SlideDepartment {
+        height: 280px;
+    }
+    .SlideDepartment-item img {
+        height: 180px;
+    }
+    .SlideDepartmentContainer {
+        margin-bottom: 16px;
+    }
+    .slick-next:before, .slick-prev:before {
+        font-size: 32px;
+    }
+    .slick-prev:before {
+        margin-left: -7px;
+    }
+}

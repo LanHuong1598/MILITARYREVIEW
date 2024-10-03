@@ -1,0 +1,74 @@
+.image img {
+  width: 100%;
+}
+
+.image {
+  margin: 0px auto;
+  text-align: center;
+}
+.news_body .image_resized{
+  width: 100% !important;
+}
+.image-style-block-align-right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.image-style-block-align-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.image-style-align-left {
+  float: left;
+  margin-right: 1.5em;
+}
+
+.image-style-align-right {
+  float: right;
+  margin-left: 1.5em;
+}
+
+.image-style-align-right, .image-style-align-left {
+  clear: none;
+}
+
+.news_body p {
+  font-family: "Montserrat", "Montserrat", "Helvetica", Montserrat, sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0em !important;
+  line-height: 1.87 !important;
+  color: #000 !important;
+  text-align: justify;
+}
+.news_body img{
+  width: 100%;
+}
+.news_body .wp-img{
+  text-align:center!important;
+}
+.news_body .fix-img{
+  width:12rem!important;
+}
+.news_body p.p-position{
+  margin-bottom: 0px!important;
+  margin-top: 8px!important;
+  color: #0b33c4 !important;
+  font-weight: 600!important;
+  font-style: italic!important;
+  font-size: 14px!important;
+  text-align:center!important;
+
+}
+.news_body p.p-name{
+  font-size: 11px!important;
+  font-weight: 500!important;
+  text-align:center!important;
+}
+@media only screen and (max-width: 760px) {
+  .wp-rowCustompage .news_body,.wp-rowCustompage .news_title,.wp-rowCustompage .left-box,.wp-rowCustompage .justify-content-start,.wp-custompage .news_footer{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}

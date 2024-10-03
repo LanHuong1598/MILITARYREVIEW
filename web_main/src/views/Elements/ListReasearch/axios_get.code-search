@@ -1,0 +1,263 @@
+# Query: axios.get
+# ContextLines: 1
+
+64 results - 29 files
+
+web_main\src\redux\actions\menu\index.js:
+  4    return (dispatch, getState) => {
+  5:     return axios.get('https://api.khcn.xyz/api/menuItem/1').then(response => {
+  6        dispatch({
+
+web_main\src\views\Content\News.js:
+  16          const requestUrl_2 = `https://api.khcn.xyz/api/news/getBySpotlight?unit=Home`;
+  17:         axios.all([axios.get(requestUrl_1),
+  18:         axios.get(requestUrl_2)])
+  19              .then(axios.spread((firstResponse, secondResponse) => {
+
+web_main\src\views\CustomPage\index.js:
+  18          const pathName = pathSplit[pathSplit.length - 1]
+  19:         axios.get(`https://api.khcn.xyz/api/menuItem/${unitName}/${pathName}`).then(response => {
+  20              const temp = response.data
+  21              setMenuItem(temp)
+  22:             axios.get(`https://api.khcn.xyz/api/menuItem/getMenu/${temp.id}`).then(response => {
+  23                  dispatch(updateMenuSelected(response.data, temp))
+
+web_main\src\views\Elements\ListReasearch\ListDetailPatent.js:
+  25          const requestUrl = "https://api.khcn.xyz/api/publications/all?type=patent&unit=Home"
+  26:         axios.get(requestUrl).then((res) => {
+  27              const total = res.headers["content-range"]
+
+  33          })
+  34:         axios.get('https://api.khcn.xyz/api/menuItem/1').then((res) => {
+  35              const menuResearch = res.data.find(item => item.title == 'Research')
+
+web_main\src\views\Elements\ListReasearch\ListDetailResearch.js:
+   37              const requestUrl = `https://api.khcn.xyz/api/publications/getByDate?page=${offset}&size=${postsPerPage}&type=publication&year=${yearIndex}&unit=Home`
+   38:             axios.get(requestUrl).then((res) => {
+   39                  const total = res.headers["content-range"]
+
+   54              const reqSearchUrl = `https://api.khcn.xyz/api/publications/searchClient?searchText=${textSearch}&unit=Home`
+   55:             axios.get(reqSearchUrl).then((res) => {
+   56                  const totalSearchNum = res.headers["content-range"]
+
+  147          const requestUrl = `https://api.khcn.xyz/api/publications/getByDate?page=${offset}&size=${postsPerPage}&type=publication&year=${yearIndex}&unit=Home`
+  148:         axios.get(requestUrl).then((res) => {
+  149              const total = res.headers["content-range"]
+
+  167      useEffect(() => {
+  168:         axios.get('https://api.khcn.xyz/api/menuItem/1').then((res) => {
+  169              const menuResearch = res.data.find(item => item.title == 'Research')
+
+  191          const requestUrl = yearIndex === '0' ? `https://api.khcn.xyz/api/publications/all?type=publication&unit=Home` : `https://api.khcn.xyz/api/publications/all?publish_year=${yearIndex}&type=publication&unit=Home`
+  192:         axios.get(requestUrl).then((res) => {
+  193              const data = res.data;
+
+web_main\src\views\Elements\Partner\index.js:
+  16          const requestUrl = `https://api.khcn.xyz/api/partners?page=${offset}&size=20&unit=Home`
+  17:         axios.get(requestUrl).then(response => {
+  18              console.log(response.data)
+
+  24          })
+  25:         axios.get('https://api.khcn.xyz/api/menuItem/1').then((res) => {
+  26              const menuCooperation = res.data.find(item=>item.title=='Cooperation')
+
+web_main\src\views\Homepage\Cooperation\index.js:
+  102          const requestUrl = `https://api.khcn.xyz/api/news/227`;
+  103:         axios.get(requestUrl).then(response => {
+  104              setInfoCoop(response.data)
+
+web_main\src\views\Homepage\Research\index.js:
+  26          const requestUrlPatent = `https://api.khcn.xyz/api/publications?page=1&size=2&type=patent&isFeatured=1&unit=Home`
+  27:         axios.get(requestUrlPublication).then(response => {
+  28              const temp = response.data
+
+  32          })
+  33:         axios.get(requestUrlPatent).then(response => {
+  34              const temp = response.data
+
+web_main\src\views\Homepage\Research\SlideResearch\SlideResearch.js:
+  36      //     const requestUrl_6 = `https://api.khcn.xyz/api/news/34`;
+  37:     //     axios.all([axios.get(requestUrl_1),
+  38:     //     axios.get(requestUrl_2), axios.get(requestUrl_3),
+  39:     //     axios.get(requestUrl_4), axios.get(requestUrl_5),
+  40:     //     axios.get(requestUrl_6) ])
+  41      //         .then(axios.spread((firstResponse, secondResponse, thirdResponse, fourResponse, fiveResponse, sixResponse) => {
+
+  55              
+  56:             axios.get(`api.khcn.xyz/api/news/getBySpotlight`).then(response => {
+  57                  const temp = response.data
+
+web_main\src\views\KVTT\Content\News.js:
+  16          const requestUrl_2 = `https://api.khcn.xyz/api/news/getBySpotlight?unit=${unit}`;
+  17:         axios.all([axios.get(requestUrl_1),
+  18:         axios.get(requestUrl_2)])
+  19              .then(axios.spread((firstResponse, secondResponse) => {
+
+web_main\src\views\KVTT\Homepage\Academics\index.js:
+  23          const requestUrlPatent = `https://api.khcn.xyz/api/publications?page=1&size=2&type=patent&isFeatured=1&unit=Home`
+  24:         axios.get(requestUrlPublication).then(response => {
+  25              const temp = response.data
+
+  29          })
+  30:         axios.get(requestUrlPatent).then(response => {
+  31              const temp = response.data
+
+web_main\src\views\KVTT\Homepage\Cooperation\index.js:
+  102          const requestUrl = `https://api.khcn.xyz/api/news/227`;
+  103:         axios.get(requestUrl).then(response => {
+  104              setInfoCoop(response.data)
+
+web_main\src\views\KVTT\Homepage\Department\index.js:
+  26          const requestUrlPatent = `https://api.khcn.xyz/api/publications?page=1&size=2&type=patent&isFeatured=1&unit=Home`
+  27:         axios.get(requestUrlPublication).then(response => {
+  28              const temp = response.data
+
+  32          })
+  33:         axios.get(requestUrlPatent).then(response => {
+  34              const temp = response.data
+
+web_main\src\views\KVTT\Homepage\Research\index.js:
+  26          const requestUrlPatent = `https://api.khcn.xyz/api/publications?page=1&size=2&type=patent&isFeatured=1&unit=${unit}`
+  27:         axios.get(requestUrlPublication).then(response => {
+  28              const temp = response.data
+
+  32          })
+  33:         axios.get(requestUrlPatent).then(response => {
+  34              const temp = response.data
+
+web_main\src\views\KVTT\Homepage\Video\index.js:
+  25          const requestUrlPatent = `https://api.khcn.xyz/api/publications?page=1&size=2&type=patent&isFeatured=1&unit=Home`
+  26:         axios.get(requestUrlPublication).then(response => {
+  27              const temp = response.data
+
+  31          })
+  32:         axios.get(requestUrlPatent).then(response => {
+  33              const temp = response.data
+
+web_main\src\views\Media\ListImage.js:
+  53          setLoaded(false)
+  54:         axios.get(`https://api.khcn.xyz/api/album`).then(resp => {
+  55              const album = standardAlbum(resp.data)
+  56:             axios.get(`https://api.khcn.xyz/api/album/${id}`).then(response => {
+  57                  const temp = {
+
+  63                  dispatch(updateMenuSelected(album, temp))
+  64:                 axios.get(`https://api.khcn.xyz/api/image/album/${id}`).then(res => {
+  65                      setListImage(standardImage(res.data.rows))
+
+web_main\src\views\News\AllNews.js:
+  58          const requestUrl = cate === "all" ? `https://api.khcn.xyz/api/news?unit=Home&page=${offset}&size=${postsPerPage}` : `https://api.khcn.xyz/api/news/getByCategoryName?&page=${offset}&size=${postsPerPage}&unit=Home&categoryName=${capitalize(cate)}`
+  59:         const res = await axios.get(requestUrl)
+  60          const total = res.headers["content-range"]
+
+  79          const requestUrl = `https://api.khcn.xyz/api/news_categories`
+  80:         axios.get(requestUrl).then(response => {
+  81              const temp = response.data
+
+web_main\src\views\News\DetailOneNew.js:
+  22      useEffect(() => {
+  23:         axios.get(`https://api.khcn.xyz/api/news_categories`).then(response => {
+  24              const temp = response.data
+
+  48          const requestUrl = `https://api.khcn.xyz/api/news/${id}`
+  49:         axios.get(requestUrl).then(response => {
+  50              const temp = response.data
+
+  52              const reqUrl = temp.category_id === 3 ? `https://api.khcn.xyz/api/news/getByCategoryName?page=1&size=3&unit=Home&categoryName=Research` : `https://api.khcn.xyz/api/news?unit=Home&page=1&size=3`
+  53:             axios.get(reqUrl).then(response => {
+  54                  const temp = response.data
+
+web_main\src\views\Student\AllStudentNews.js:
+  58          const requestUrl = cate === "all" ? `https://api.khcn.xyz/api/news?unit=Home&page=${offset}&size=${postsPerPage}` : `https://api.khcn.xyz/api/news/getByCategoryName?&page=${offset}&size=${postsPerPage}&unit=Home&categoryName=${capitalize(cate)}`
+  59:         const res = await axios.get(requestUrl)
+  60          const total = res.headers["content-range"]
+
+  79          const requestUrl = `https://api.khcn.xyz/api/news_categories`
+  80:         axios.get(requestUrl).then(response => {
+  81              const temp = response.data
+
+web_main\src\views\Student\CareerOpportunities.js:
+   80          const requestUrl = `https://api.khcn.xyz/api/careerAndContest?page=${offset}&size=${postsPerPage}&type=career`
+   81:         const res = await axios.get(requestUrl)
+   82          const total = res.headers["content-range"]
+
+  100          const requestUrl = `https://api.khcn.xyz/api/careerAndContest/spotlight?type=career`;
+  101:         axios.get(requestUrl).then(res => {
+  102              const temp = res.data
+
+  105          const requestUrl2 = `https://api.khcn.xyz/api/career_partner`;
+  106:         axios.get(requestUrl2).then(res => {
+  107              setPartner(res.data);
+
+web_main\src\views\Student\CustomStudent.js:
+  40          const requestUrl = `https://api.khcn.xyz/api/careerAndContest/spotlight`;
+  41:         axios.get(requestUrl).then(res => {
+  42              const temp = res.data
+
+  50          setLoaded(false)
+  51:         axios.get(`https://api.khcn.xyz/api/introduction/${id}`).then(response => {
+  52              setLoaded(true)
+
+web_main\src\views\Student\DetailCategory.js:
+  45          const requestUrl = `https://api.khcn.xyz/api/careerAndContest?page=1&size=4&type=career`;
+  46:         axios.get(requestUrl).then(res => {
+  47              const temp = res.data
+
+  72          const requestUrl = `https://api.khcn.xyz/api/careerAndContest/${id}`
+  73:         axios.get(requestUrl).then(response => {
+  74              const temp = response.data
+
+web_main\src\views\Student\DetailOneStudentNew.js:
+  22      useEffect(() => {
+  23:         axios.get(`https://api.khcn.xyz/api/news_categories`).then(response => {
+  24              const temp = response.data
+
+  48          const requestUrl = `https://api.khcn.xyz/api/news/${id}`
+  49:         axios.get(requestUrl).then(response => {
+  50              const temp = response.data
+
+  52              const reqUrl = temp.category_id === 3 ? `https://api.khcn.xyz/api/news/getByCategoryName?page=1&size=3&unit=Home&categoryName=Research` : `https://api.khcn.xyz/api/news?unit=Home&page=1&size=3`
+  53:             axios.get(reqUrl).then(response => {
+  54                  const temp = response.data
+
+web_main\src\views\Student\ListImageStudent.js:
+  47      useEffect(() => {
+  48:         axios.get(`https://api.khcn.xyz/api/studentAlbum`).then(res => {
+  49              const albumMenu = standardAlbum(res.data)
+
+  57          setLoaded(false)
+  58:         axios.get(`https://api.khcn.xyz/api/studentImage/${id}/album?page=1&size=25`).then(res => {
+  59              setListImage(standardImage(res.data))
+
+web_main\src\views\Student\StudentClub.js:
+  59          const requestUrl = `https://api.khcn.xyz/api/careerAndContest?page=${offset}&size=${postsPerPage}&type=club`
+  60:         const res = await axios.get(requestUrl)
+  61          const total = res.headers["content-range"]
+
+web_main\src\views\Student\StudentClubOverview.js:
+  25          const pathName = pathSplit[pathSplit.length - 1]
+  26:         axios.get(`https://api.khcn.xyz/api/introduction/3`).then(response => {
+  27              const temp = response.data
+
+web_main\src\views\Student\StudentContest.js:
+  135              dispatch(updateMenuSelected(album, temp))
+  136:             const res =  axios.get(`https://api.khcn.xyz/api/careerAndContest/contest/${id}`).then(res => {
+  137                  const total = res.headers["content-range"]
+
+web_main\src\views\Student\StudentExchange.js:
+   80          const requestUrl = `https://api.khcn.xyz/api/careerAndContest?page=${offset}&size=${postsPerPage}&type=exchange`
+   81:         const res = await axios.get(requestUrl)
+   82          const total = res.headers["content-range"]
+
+  100          const requestUrl = `https://api.khcn.xyz/api/studentLink/student-exchanges`;
+  101:         axios.get(requestUrl).then(res => {
+  102              const temp = res.data
+
+web_main\src\views\Student\StudentLife.js:
+  40          const requestUrl = `https://api.khcn.xyz/api/studentLink/student-life`;
+  41:         axios.get(requestUrl).then(res => {
+  42              const temp = res.data
+
+  50          setLoaded(false)
+  51:         axios.get(`https://api.khcn.xyz/api/introduction/1`).then(response => {
+  52              setLoaded(true)

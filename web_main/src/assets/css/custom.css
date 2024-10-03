@@ -1,0 +1,47 @@
+body {
+    background-color: #ffffff !important;
+}
+
+/* =================== Header =================================*/
+#navMenu {
+    background-color: #961603;
+}
+
+/* search */
+
+.sc-ifAKCX.jZkBQk>.wrapper {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid;
+    font-family: "Montserrat";
+}
+
+/* Menu */
+
+a.menuItem_link:hover {
+    text-decoration: underline;
+}
+
+/* ====================== End header ============================*/
+
+/* slick */
+
+/* the slides */
+
+.bg-contentNew .slick-slide > div{
+    margin: 0 16px;
+}
+
+.bg-contentNew .slick-list {
+    margin: 0 -16px;
+}
+
+/* end react-slick */
+
+/* global color */
+
+.text-link {
+    color: #8c8c8c;
+}
+.search-input:focus{outline: none;}
+/* end global color */

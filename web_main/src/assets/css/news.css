@@ -1,0 +1,638 @@
+.news-feed__filters {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.news-feed__filters>ul {
+    list-style: none;
+}
+
+.news-feed__filters ul li {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+.wp-shadowBook {
+    position: relative;
+    padding-bottom: 4rem;
+}
+.shadowBook {
+    position: absolute;
+    border-radius: 8px;
+    width: 95%;
+    height: 60%;
+    bottom: 0;
+    z-index: -1;
+}
+.shadowBook-color-0 {
+    background: #F3F1F2;
+}
+.shadowBook-color-1 {
+    background: #CCDAFD;
+}
+.shadowBook-color-2 {
+    background: #C2EAFF;
+}
+.shadowBook-color-3 {
+    background: #E1F1FF;
+}
+.btn--pill {
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+.img-book {
+    border-radius: 8px;
+    width: 85%;
+    margin: auto;
+}
+
+.btn--stroke {
+    background: none;
+    border: 1px solid #333;
+    color: #333;
+}
+
+.btn--pill.btn--stroke:hover {
+    background: #e81d1d;
+    border-color: #e81d1d;
+    color: #fff;
+}
+
+/* Content */
+
+.mg-aa {
+    margin: auto auto;
+}
+
+.mg-center {
+    margin: 0px auto;
+}
+
+.img-card--box:after {
+    content: "";
+    border-left: 12px solid #fff;
+    border-top: 12px solid #fff;
+    border-color: transparent #fff #fff transparent;
+    border-style: solid;
+    border-width: 12px;
+    bottom: 0;
+    display: block;
+    height: 0;
+    margin-bottom: -1px;
+    position: absolute;
+    right: 0;
+    width: 0;
+    z-index: 2;
+}
+
+.news-feed__body {
+    margin-top: 32px;
+    min-height: 100px;
+    position: relative;
+}
+
+.img-card__img img {
+    height: 12rem;
+    -o-object-fit: cover;
+    font-family: "object-fit:cover;object-position:center";
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    margin-bottom: 0;
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.75, 0, 0, .75);
+    transition: -webkit-transform .3s cubic-bezier(.75, 0, 0, .75);
+    transition: transform .3s cubic-bezier(.75, 0, 0, .75);
+    transition: transform .3s cubic-bezier(.75, 0, 0, .75), -webkit-transform .3s cubic-bezier(.75, 0, 0, .75);
+    width: 100%;
+}
+
+.img-card {
+    color: #333;
+    display: block;
+    outline: 0;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: box-shadow .3s cubic-bezier(.75, 0, 0, .75), color .3s cubic-bezier(.75, 0, 0, .75);
+    transition: box-shadow .3s cubic-bezier(.75, 0, 0, .75), color .3s cubic-bezier(.75, 0, 0, .75);
+}
+
+.img-card--box::before {
+    content: "";
+    border: 12px solid #e81d1d;
+    bottom: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    width: 0;
+    z-index: 2;
+}
+
+.img-card--box {
+    background: #f9f9f9;
+}
+
+.img-card.img-card--box {
+    cursor: pointer;
+}
+
+.img-card__img {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-card__body {
+    background: #f9f9f9;
+    padding: 18px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.img-card__label {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.img-card__title {
+    font-size: .9375em;
+    margin: 0 0 13px;
+    font-weight: 700;
+}
+
+.img-card__label span:not(.icon) {
+    font-size: .8125em;
+    line-height: 1.33;
+    vertical-align: middle;
+}
+
+.img-card__label .pub:after {
+    content: " ";
+    display: inline-block;
+}
+
+.img-card.img-card--box:hover {
+    color: #e81d1d;
+}
+
+.activeTittle {
+    background-color: #e81d1d;
+    border: #e81d1d;
+    color: #fff;
+}
+
+.btn-load-more {
+    font-size: .8125em;
+    position: relative;
+    color: #e81d1d;
+    border-color: #e81d1d;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 1px solid #e81d1d;
+}
+
+.btn-load-more:focus {
+    background-color: #e81d1d;
+    color: #fff;
+}
+
+.btn-load-more:hover {
+    background-color: #e81d1d;
+}
+
+.slick-prev {
+    left: -2% !important;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 2% !important;
+    z-index: 1;
+}
+
+/* .slick-next:before {
+    color: #e81d1d;
+    margin-left: 5px;
+}
+
+.slick-prev:before {
+    color: #e81d1d;
+    margin-left: -14px;
+} */
+
+.news-feed__items .slick-dots {
+    bottom: 0;
+}
+
+.news-feed__items .slick-list {
+    padding-bottom: 2rem;
+}
+
+.slick-dots li button:before {
+    font-size: 1rem;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #e81d1d;
+}
+
+/* Content label */
+
+.button-content-wrapper {
+    display: flex;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-transform: none;
+    margin-left: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tittleContentLabel {
+    margin-top: 120px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+/* Item slider */
+
+.unicamp-box {
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 50%);
+    transition: all .25s cubic-bezier(.645, .045, .355, 1);
+}
+
+.post-thumbnail {
+    overflow: hidden;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    position: relative;
+}
+
+.post-thumbnail>a>img {
+    height: 12rem;
+    width: 100%;
+}
+
+.unicamp-image a {
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.post-read-more {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.tm-button-xs {
+    padding: 0 23px;
+    min-height: 40px;
+    color: #fff;
+    border-color: #ae152d;
+    transform: perspective(1px) translateZ(0);
+    width: 100% !important;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+.tm-button.style-flat:before {
+    background-color: #e81d1d;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+}
+
+.button-content-wrapper {
+    display: inline-block;
+    margin-top: 135px;
+    text-decoration: underline;
+}
+
+.tm-button.style-flat:after {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+}
+
+.cat-shape {
+    background: #e81d1d;
+    position: absolute;
+    left: 36px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 16px;
+}
+
+.post-title {
+    height: 4em;
+    margin: 0;
+}
+
+.post-title-relate {
+    height: 69px;
+    margin: 0;
+}
+
+.post-title>a, .post-title-relate>a {
+    line-height: 29.46px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #161616;
+}
+
+.post-title-2-rows {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.post-title-relate-2-rows {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.post-meta {
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    line-height: 26px;
+}
+
+.post-date {
+    position: relative;
+}
+
+.post-meta-author>a>span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21.28px;
+    color: #161616;
+}
+
+.post-wrapper img {
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+.post-wrapper:hover img {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.post-wrapper:hover .post-read-more {
+    transform: none;
+    transition-duration: 1s;
+}
+
+.post-wrapper .post-read-more {
+    transform: translateY(100%);
+    transition-duration: 1s;
+}
+
+.line-post-item {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+/* Upcoming Events */
+
+.unicamp-event-box {
+    position: relative;
+    background: #f5f5f5;
+    /* padding-left: 36px;
+    padding-right: 34px; */
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.unicamp-event-box .box-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.unicamp-event-box .box-title {
+    margin-top: 120px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 54px;
+}
+
+.unicamp-event-box .tm-button-wrapper {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.unicamp-event-box .post-item {
+    padding: 30px 5px 28px;
+}
+
+.unicamp-event-box .event-caption {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.unicamp-event-box .left-box {
+    min-width: 20px;
+}
+
+.unicamp-event-box .event-date--day {
+    font-size: 40px;
+    line-height: 1;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: red;
+}
+
+.unicamp-event-box .event-date--month {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9b9b9b;
+}
+
+.unicamp-event-box .right-box {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.unicamp-event-box .event-time {
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.button-text {
+    color: #e81d1d;
+    font-weight: 700;
+    line-height: 26.19px;
+    font-size: 16px;
+}
+
+.right-box-research>p>a {
+    font-family: "Montserrat";
+}
+
+.right-box-research>p {
+    font-family: "Montserrat";
+}
+
+#slide_strongGr .slick-list {
+    padding-bottom: 2rem;
+}
+
+.right-box-research-other p {
+    display: contents;
+}
+
+.right-box-research-other>a>p {
+    font-family: "Montserrat", "Montserrat", "Helvetica", Montserrat, sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0em !important;
+    line-height: 1.87 !important;
+    text-align: justify!important;
+}
+
+.right-box-research-other p a strong {
+    color: #000;
+}
+
+.bg-contentNew {
+    background-color: #FFFFFF;
+}
+
+/* News slide */
+
+.post-categories>a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26.19px;
+    margin-top: 23px;
+    margin-bottom: 6px;
+    color: #82A81B;
+    text-transform: uppercase;
+}
+
+.post-date>p.meta-value {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21.28px;
+    color: #161616;
+}
+@media only screen and (max-width :770px)  {
+    .unicamp-event-box .box-title  {
+        font-size: 24px ;
+        line-height: 36px;
+
+    }
+    h3, .h3 {
+        font-size: 16px;
+        line-height: 26.19px;
+        margin: 20px 0 0px;
+    }
+    .research-content a {
+        font-size: 16px !important;
+    }
+    
+    .bg-contentNew .slick-slide {
+        
+        height: auto;
+        
+    }
+    .news-feed__body .news-feed__items .post-thumbnail>a>img {
+        height: 235px;
+        
+    }
+    
+    
+    .bg-contentNew
+    {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    /* .container .tittleContentLabel{
+        margin-left: 32px;
+    } */
+    /* .container .row .col-md-3 {
+        
+        width: 45%;
+        margin-left: 15px;
+        
+    }
+    .container .row .col-md-6{
+        margin-left: 29px;
+        margin-right: 29px;
+    }
+    .container .row .col-md-12{
+        margin-left: 29px;
+        margin-right: 29px;
+    } */
+
+    .unicamp-event-box .box-title {
+        margin-top: 60px;
+    }
+    .button-content-wrapper {  
+        margin-top: 65px;
+    }
+    .post-title-relate {
+        height: 60px;
+    }
+}
+.box-body .slick-slide img {
+    display: block;
+    height: 200px;
+}
+.box-body{
+    height: 700px ;
+}

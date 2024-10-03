@@ -1,0 +1,40 @@
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-video.css');
+
+.Video{
+   
+    display: flex;
+    border-bottom: 2px ridge #fcf8fa;
+}
+.video-title{
+    margin: 50px 0 7px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+@media only screen and (max-width: 960px) {
+  .Video{
+      flex-direction: column;
+      height: auto;
+  }
+  
+}
+@media only screen and (max-width: 600px) {
+    .video-title{
+        font-size: 24px;
+        margin-top: 60px;
+    }
+    .VideoSlide{
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 380px;
+    }
+    .video-item img{
+        height: 200px;
+        object-fit: fill;
+    }
+    .wp-video.container .video-title{
+        margin-left: 32px;
+    }
+}
+  

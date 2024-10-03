@@ -1,0 +1,7 @@
+.staffbody p,.staffbody ul,.staffbody li{
+    color:rgb(0, 0, 0) !important;
+    font-family: "Montserrat" !important;
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height: 28.39px !important;
+}

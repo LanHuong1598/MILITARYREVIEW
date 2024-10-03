@@ -1,0 +1,29 @@
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-video.css');
+
+.Video{
+   
+    display: flex;
+    border-bottom: 2px ridge #fcf8fa;
+}
+
+.video-item {
+    padding: 30px;
+    width: 33.33%;
+    height: 240px;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+  .Video{
+      flex-direction: column;
+      height: auto;
+  }
+  
+}
+@media only screen and (max-width: 600px) {
+   
+   
+}
+  

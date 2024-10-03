@@ -1,0 +1,110 @@
+$sidebar-bg-color: #fff !default;
+$sidebar-color: #000 !default;
+$sidebar-width: 270px !default;
+$sidebar-collapsed-width: 80px !default;
+$highlight-color: #000 !default;
+$submenu-bg-color: #fff !default;
+$submenu-bg-color-collapsed: #2b2b2b !default;
+$icon-bg-color: #2b2b2b !default;
+$icon-size: 35px !default;
+$breakpoint-xs: 480px !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
+
+$custompage-xl: 128px !default;
+$custompage-md: 64px !default;
+$custompage-sm: 30px !default;
+
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+
+.pro-sidebar   {
+    width: 100%;
+    .pro-sidebar-inner {
+        background-color: #f5f5f5;
+        .pro-sidebar-layout {
+            padding: $custompage-xl 25px 160px 25px;
+        }
+    }
+    .pro-menu {
+        padding: 0px;
+        padding-top: 40px;
+        .pro-menu-item {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 40px;
+            .pro-inner-item {
+                padding: 0px;
+                .pro-item-content {
+                    text-overflow: unset;
+                    white-space: unset;
+                }
+            }
+        }
+    }   
+}
+.pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
+    background-color: #f5f5f5;
+    ul {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+     .pro-inner-item {
+        padding: 0 !important;
+    }
+}
+.wp-custompage {
+    margin-top: $custompage-xl;
+}
+.tittle_sidebar{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 54px;
+    color: #161616;
+    text-transform: capitalize;
+}
+//responsive
+@media only screen and (max-width :770px)  {
+    .col-sm-12.col-md-3
+    {
+        .pro-sidebar{
+            display: none;
+        }
+    }
+    .tittle_sidebar{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .pro-sidebar   {
+        .pro-sidebar-inner {
+            margin: $custompage-sm;
+            margin-top: 8px;
+            .pro-sidebar-layout {
+                padding: $custompage-sm 22px 36px 16px;
+            }
+        }
+        .pro-menu {
+            padding: 0px;
+            margin-left: 1rem;
+            .pro-menu-item {
+                font-size: 16px;
+                line-height: 32px;
+                .pro-inner-item {
+                    padding: 0px;
+                }
+            }
+        }   
+    }
+    .wp-custompage {
+        margin-top:0;
+        padding-left: 0;
+        padding-right: 0;
+        .customPage_title {
+            margin: 0 30px;
+        }
+        .customPage_content{
+            padding: 0 30px;
+        }
+    }
+}

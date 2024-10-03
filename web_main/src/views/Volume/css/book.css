@@ -1,0 +1,99 @@
+.book-block {
+    float: left;
+    width: 95%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.book-block .left-img {
+    width: 165px;
+    height: 115px;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.book-block .left-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: auto;
+    max-height: 100%;
+    max-width: none;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    vertical-align: middle;
+}
+.book-block .content {
+    padding-top: 20px;
+    padding-left: 190px;
+}
+.book-block .content .book-title {
+    color: #e81d1d;
+    font-size: 20px;
+    font-weight: 500;
+}
+.book-block .content .book-date {
+    color: #000;
+    font-size: 15px;
+    font-style: italic;
+    padding: 10px 0;
+}
+.book-summary {
+    color: black;
+    margin-bottom: 3%;
+}
+.book-summary {
+    color: black;
+    margin-bottom: 3%;
+    font-weight: 400;
+}
+.book-all {
+    float: left;
+    width: 100%;
+    display: block;
+    border-right: 1px solid #e5e5e5;
+}
+    
+   .pagination {
+    padding-top: 1rem;
+    margin-left: -1px;
+    display: flex;
+    list-style: none;
+    outline: none;
+   }
+    
+   .pagination>.active>a {
+    background-color: #47ccde;
+    color: #fff;
+   }
+    
+   .pagination>li>a {
+    border: 1px solid #47ccde;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+   }
+    
+   .pagination>li>a, .pagination>li>span {
+    color: #47ccde;
+    background-color: azure;
+   }
+
+.right-box-research-other p, .right-box-research-other a  {
+    font-family: "Montserrat", "Montserrat", "Helvetica", Montserrat, sans-serif;
+    font-size: 17px ;
+    font-weight: 400 ;
+    letter-spacing: 0em ;
+    line-height: 1.87 ;
+    display: initial ;
+    text-align: justify;
+}
+.main-app ul li strong {
+    font-weight: 600;
+}
+.main-app ul li a {
+    font-weight: 500 !important;
+}
