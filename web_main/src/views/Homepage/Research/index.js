@@ -71,7 +71,7 @@ export default function Research() {
                                             })
                                             }
                                         </div>
-                                        <Link to={`/research/list`} className="viewAllCollection">View All</Link>
+                                        <Link to={`/research/list`} className="viewAllCollection">Xem thêm</Link>
                                     </div>
                                 </div>
                                 <div className="research-item">
@@ -92,7 +92,7 @@ export default function Research() {
                                             })
                                             }
                                         </div>
-                                        <Link to={`/patent/list`} className="viewAllCollection">View All</Link>
+                                        <Link to={`/patent/list`} className="viewAllCollection">Xem thêm</Link>
                                     </div>
                                 </div>
                             </div>

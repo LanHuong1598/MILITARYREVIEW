@@ -52,7 +52,7 @@ export default function ListBook() {
     useEffect(() => {
         // set loading to wait get data
         setLoaded(false)
-        const requestUrl = `http://27.71.228.19:5004/api/volume`
+        const requestUrl = `http://27.71.228.19:5004/api/volume?size=18&PAGE=1`
         axios.get(requestUrl).then(response => {
             const temp = response.data
             setBooks(temp)

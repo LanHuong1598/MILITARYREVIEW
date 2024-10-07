@@ -155,7 +155,7 @@ export default function Cooperation() {
                             <div className="co-title">
                                 <p style={{ color: '#FFFFFF', fontWeight: '700' }}>Cooperation</p>
                                 <div className="co-view">
-                                    <Link to={`/partner/list`}>View All</Link>
+                                    <Link to={`/partner/list`}>Xem thêm</Link>
                                 </div>
 
                             </div>
@@ -197,7 +197,7 @@ export default function Cooperation() {
                                         <p className="co-info-1" style={{ color: '#FFFFFF', fontWeight: '700', marginBottom: '0.3em' }}><Link  to={`/listnews/detail/${infoCoop.title}`} style={{ color: '#FFFFFF', fontWeight: '700', marginBottom: '0.3em', fontSize: '24px' }}>{infoCoop.title}</Link></p>
                                         <p style={{ color: '#FABD03', fontSize: '13px', fontWeight: '400', marginBottom: '1em' }}>{toDateTimeStringEnglish(infoCoop.date_created)}</p>
                                         <p className="co-info-2" ><Link  to={`/listnews/detail/${infoCoop.title}`} style={{ color: '#FFFFFF', fontWeight: '400', marginBottom: '0.9em' }}>{infoCoop.description}</Link></p>
-                                        <Link style={{ color: '#FABD03', fontSize: '16px', fontWeight: '700', marginBottom: '4px', textDecorationLine: 'underline' }} to={`/news/cooperation`}>View All</Link>
+                                        <Link style={{ color: '#FABD03', fontSize: '16px', fontWeight: '700', marginBottom: '4px', textDecorationLine: 'underline' }} to={`/news/cooperation`}>Xem thêm</Link>
                                     </Col>
                                 </>
                         }

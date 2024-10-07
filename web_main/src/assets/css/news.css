@@ -437,7 +437,7 @@
 
 .unicamp-event-box {
     position: relative;
-    background: #f5f5f5;
+    /* background: #f5f5f5; */
     /* padding-left: 36px;
     padding-right: 34px; */
     padding-left: 25px;
@@ -484,7 +484,7 @@
 .unicamp-event-box .event-date--day {
     font-size: 40px;
     line-height: 1;
-    font-family: "Montserrat";
+    font-family: "Arial";
     font-weight: 700;
     color: red;
 }
@@ -519,11 +519,11 @@
 }
 
 .right-box-research>p>a {
-    font-family: "Montserrat";
+    font-family: "Arial";
 }
 
 .right-box-research>p {
-    font-family: "Montserrat";
+    font-family: "Arial";
 }
 
 #slide_strongGr .slick-list {
@@ -535,7 +535,7 @@
 }
 
 .right-box-research-other>a>p {
-    font-family: "Montserrat", "Montserrat", "Helvetica", Montserrat, sans-serif !important;
+    font-family: "Arial", "Arial", "Helvetica", Arial, sans-serif !important;
     font-size: 17px !important;
     font-weight: 400 !important;
     letter-spacing: 0em !important;

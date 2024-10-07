@@ -1,5 +1,5 @@
 .news_title > h4 {
-    font-family: 'Montserrat';
+    font-family: 'Arial';
     font-size: 30px;
     font-weight: 500;
     line-height: 1.42;
@@ -7,7 +7,7 @@
     word-wrap: break-word;
 }
 .news_body p{
-    font-family: 'Montserrat';
+    font-family: 'Arial';
 }
 .news_footer >h3 {
     font-weight: 500;

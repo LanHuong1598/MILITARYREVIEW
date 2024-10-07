@@ -65,7 +65,7 @@ export default function Video() {
     };
     return (
         <Container className="wp-video">
-            <h2 className="video-title" style={{ color: 'black' }}>Media</h2>
+            <h2 className="video-title" style={{ color: 'black' }}>Hình ảnh</h2>
             {
                 !loaded ? <Loader type="ThreeDots" color="#285A21" height="100" width="100" /> :
                     <Row>

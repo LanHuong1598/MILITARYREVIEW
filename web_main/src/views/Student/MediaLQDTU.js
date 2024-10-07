@@ -71,7 +71,7 @@ export default function MediaLQDTU() {
                                     <Link to={info.linkSrc} style={{ color: '#e81d1d', fontWeight: '700', marginBottom: '0.3em', fontSize: '24px' }} target={'_blank'}>{info.title}</Link>
                                 </p>
                                 <p style={{ color: '#161616;', fontSize: '18px', fontWeight: '400', marginBottom: '1em', lineHeight: '163.68%' }}>{info.content}</p>
-                                <Link style={{ color: '#e81d1d', fontSize: '16px', fontWeight: '700', marginBottom: '4px', textDecorationLine: 'underline' }} to={info.linkSrc} target={'_blank'}>Read more</Link>
+                                <Link style={{ color: '#e81d1d', fontSize: '16px', fontWeight: '700', marginBottom: '4px', textDecorationLine: 'underline' }} to={info.linkSrc} target={'_blank'}>Xem thêm</Link>
                             </Col>
                         </>
                     )

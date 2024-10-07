@@ -13,14 +13,14 @@ export default function Resources() {
                         <Row>
                             <Col md={9}>
                                 <h4 className="tittleContentLabel">
-                                    <span className="contentLabel">New Books</span>
+                                    <span className="contentLabel">Các số đã xuất bản</span>
                                 </h4>
                             </Col>
                             <Col md={3} >
                                 <div className="tm-button-wrapper" style={{ textAlign: 'right' }}>
                                     <Link className="button-content-wrapper" to="/books/all">
                                         <span className="button-text">
-                                            View All
+                                            Xem thêm
                                         </span>
                                     </Link>
                                 </div>

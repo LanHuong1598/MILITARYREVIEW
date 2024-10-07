@@ -187,7 +187,7 @@ const standardNavbar = (dataMenu, unitName) => {
 const standardBreadCrumb = (dataAllMenu, dataMenuSelected) => {
   let breadCrumbArr = [
     {
-      title: "Home",
+      title: "Trang chủ",
       path: "/"
     }
   ]

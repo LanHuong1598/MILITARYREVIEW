@@ -18,18 +18,18 @@ ul.listLink li a{
 }
 .titleSchool {
     font-size: 44px;
-    font-family: "Newsreader";
+    font-family: "Roboto";
     font-weight: 500;
     line-height: 52.8px;
 }
 .titleUniver {
     font-size: 30px;
-    font-family: "Newsreader";
+    font-family: "Roboto";
     font-weight: 500;
     line-height: 36px;
 }
 .addressUniver {
-    font-family: "Montserrat";
+    font-family: "Arial";
     font-weight: 400;
     font-size: 14px;
     line-height: 22.92px;
@@ -61,7 +61,7 @@ ul.listLink li a{
 @media only screen and (max-width: 767px) {
     .site-footer .titleSchool {
         font-size: 31.19px;
-        font-family: "Newsreader";
+        font-family: "Roboto";
         font-weight: 500;
         line-height: 37.43px;
         text-align: center;

@@ -32,7 +32,7 @@ export default function News({unit}) {
                     !loaded ? <Loader type="ThreeDots" color="#e81d1d" height="100" width="100" /> :
                         <Row>
                             <Col md={8} sm={12}>
-                                <ContentLabel tittle="Latest News"></ContentLabel>
+                                <ContentLabel tittle="Tin mới"></ContentLabel>
                                 <ContentNews infoLatest={infoLatest}></ContentNews>
                             </Col>
                             <Col md={4} sm={12}>

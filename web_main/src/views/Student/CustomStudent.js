@@ -90,11 +90,11 @@ export default function CustomStudent() {
                     <Col md="3">
                         <div className="unicamp-event-box unicamp-box">
                             <div className="box-header">
-                                <h4 className="box-title">Highlights</h4>
+                                <h4 className="box-title">Tin nổi bật</h4>
                                 <div className="tm-button-wrapper">
                                     <Link className="button-content-wrapper" to="/category/Contest">
                                         <span className="button-text">
-                                            View All
+                                            Xem thêm
                                         </span>
                                     </Link>
                                 </div>

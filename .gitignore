@@ -1,3 +1,4 @@
 /web_main/node_modules
 /web_main/build
 /web_main/*.zip
+node_modules

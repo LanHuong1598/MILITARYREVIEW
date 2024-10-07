@@ -112,7 +112,7 @@ export default function DetailOneNew() {
             </div>
             <Link to='/news/all' className="mb-1 d-inline-block"><ArrowLeft />Return news</Link>
             <div className="news_footer">
-                <h3>READ MORE</h3>
+                <h3>Xem thêm</h3>
                 <ul className="ml-3">
                     {
                         moreNews.map((item, index) => {

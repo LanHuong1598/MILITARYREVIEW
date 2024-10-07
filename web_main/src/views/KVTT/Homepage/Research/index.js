@@ -67,7 +67,7 @@ export default function Research(props) {
                                             })
                                             }
                                         </div>
-                                        <Link to={`/research/list`} className="viewAllCollection">View All</Link>
+                                        <Link to={`/research/list`} className="viewAllCollection">Xem thêm</Link>
                                     </div>
                                 </div>
                                 <div className="research-item">

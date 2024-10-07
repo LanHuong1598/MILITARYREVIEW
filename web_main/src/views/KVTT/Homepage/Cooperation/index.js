@@ -72,7 +72,7 @@ export default function Cooperation({unit}) {
                             <div className="co-title">
                                 <p style={{ color: '#FFFFFF', fontWeight: '700' }}>Cooperation</p>
                                 <div className="co-view">
-                                    <Link to={`/partner/list`}>View All</Link>
+                                    <Link to={`/partner/list`}>Xem thêm</Link>
                                 </div>
 
                             </div>

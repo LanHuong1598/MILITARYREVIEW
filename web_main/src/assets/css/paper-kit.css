@@ -1982,7 +1982,7 @@ textarea.form-control {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Montserrat", "Helvetica", Montserrat, sans-serif;
+  font-family: "Arial", "Helvetica", Arial, sans-serif;
   font-weight: 300; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
@@ -2032,7 +2032,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .footer-big h5,
 .footer-big h4,
 .media .media-heading {
-  font-family: "Montserrat", "Helvetica", Montserrat, sans-serif; }
+  font-family: "Arial", "Helvetica", Arial, sans-serif; }
   .title,
   .title a,
   .card-title,
@@ -2127,7 +2127,7 @@ body {
   color: #66615b;
   font-size: 14px;
   font-weight: 300;
-  font-family: 'Montserrat', "Helvetica", Montserrat, sans-serif; }
+  font-family: 'Arial', "Helvetica", Arial, sans-serif; }
 
 a {
   color: #51bcda; }

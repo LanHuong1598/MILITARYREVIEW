@@ -19,7 +19,7 @@ export default function MediaLQDTU(props) {
                             <a href={info.linkSrc} target="_blank" style={{ color: '#e81d1d', fontWeight: '700', marginBottom: '0.3em', fontSize: '24px' }}>{info.title}</a>
                         </p>
                         <p style={{ color: '#161616;', fontSize: '18px', fontWeight: '400', marginBottom: '1em', lineHeight: '163.68%' }}>{info.content}</p>
-                        <a target="_blank" style={{ color: '#e81d1d', fontSize: '16px', fontWeight: '700', marginBottom: '4px', textDecorationLine: 'underline' }} href={info.linkSrc}>Read more</a>
+                        <a target="_blank" style={{ color: '#e81d1d', fontSize: '16px', fontWeight: '700', marginBottom: '4px', textDecorationLine: 'underline' }} href={info.linkSrc}>Xem thêm</a>
                     </Col>
                 </> : <>
                     <Col md='3' sm='6' className="me-image" className={info.imgtil} style={{ backgroundImage: ``, backgroundSize: '100% 100%' }}>
@@ -33,7 +33,7 @@ export default function MediaLQDTU(props) {
                             <Link to={info.linkSrc} style={{ color: '#e81d1d', fontWeight: '700', marginBottom: '0.3em', fontSize: '24px' }}>{info.title}</Link>
                         </p>
                         <p style={{ color: '#161616;', fontSize: '18px', fontWeight: '400', marginBottom: '1em', lineHeight: '163.68%' }}>{info.content}</p>
-                        <Link style={{ color: '#e81d1d', fontSize: '16px', fontWeight: '700', marginBottom: '4px', textDecorationLine: 'underline' }} to={info.linkSrc}>Read more</Link>
+                        <Link style={{ color: '#e81d1d', fontSize: '16px', fontWeight: '700', marginBottom: '4px', textDecorationLine: 'underline' }} to={info.linkSrc}>Xem thêm</Link>
                     </Col>
                 </>
             }

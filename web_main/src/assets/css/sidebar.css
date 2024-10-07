@@ -2,10 +2,10 @@
    color: #000;
 }
 .pro-sidebar-inner{
-    background-color: #f5f5f5 !important;
+    /* background-color: #f5f5f5 !important; */
 }
 .pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
 }
 .pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item:hover {
     color: #000;

@@ -14,7 +14,7 @@ export default function ContentNewsItem({ infoItem }) {
                             <div className="tm-button style-flat tm-button-xs tm-button-full-wide icon-right">
                                 <div className="button-content-wrapper mt-2 ml-0">
                                     <span className="">
-                                        Read More <i className="nc-icon nc-minimal-right" />
+                                        Xem thêm <i className="nc-icon nc-minimal-right" />
                                     </span>
                                     <span className="button-icon">
 
